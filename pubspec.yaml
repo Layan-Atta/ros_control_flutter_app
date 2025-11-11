@@ -1,0 +1,47 @@
+# اسم المشروع (يمكنك تغييره)
+name: robot_ros_controller
+description: "تطبيق فلاتر للتحكم في ROS (Turtlesim) عبر WebSocket."
+
+# منع النشر العرضي على pub.dev
+publish_to: 'none' 
+
+# إصدار التطبيق
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # تم التحديث لاستخدام أحدث إصدارات Dart
+
+# -------------------
+#  الاعتماديات (Dependencies)
+# -------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- هذه هي الحزمة المطلوبة للمهمة ---
+  # لإدارة الاتصال بـ WebSocket
+  web_socket_channel: ^2.4.0 # (أو استخدم أحدث إصدار)
+
+  # (اختياري) حزمة لتحسين الأيقونات (أجمل من الأيقونات الافتراضية)
+  # iconsax: ^0.0.8 
+
+  # الأيقونات القياسية
+  cupertino_icons: ^1.0.2
+
+# -------------------
+#  اعتماديات التطوير (Dev Dependencies)
+# -------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # حزمة للتدقيق في جودة الكود (מומלץ)
+  flutter_lints: ^3.0.0
+
+# إعدادات Flutter
+flutter:
+  uses-material-design: true
+
+  # (يمكنك إضافة الخطوط أو الصور هنا إذا أردت)
+  # assets:
+  #   - images/robot_icon.png
